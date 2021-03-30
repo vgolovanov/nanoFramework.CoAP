@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{11A8DD76-328B-46DF-9F39-F559912D0360}") = "nanoFramework.CoAP", "nanoFramework.CoAP\nanoFramework.CoAP.nfproj", "{C55B4D68-071E-4DC9-9552-8B1586EBE5E9}"
+EndProject
+Project("{11A8DD76-328B-46DF-9F39-F559912D0360}") = "nanoFramework.CoAP_Samples", "nanoFramework.CoAP_Samples\nanoFramework.CoAP_Samples.nfproj", "{09EE93BC-CC82-46C7-8FFE-3AC36F4C9D00}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C55B4D68-071E-4DC9-9552-8B1586EBE5E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C55B4D68-071E-4DC9-9552-8B1586EBE5E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C55B4D68-071E-4DC9-9552-8B1586EBE5E9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C55B4D68-071E-4DC9-9552-8B1586EBE5E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C55B4D68-071E-4DC9-9552-8B1586EBE5E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C55B4D68-071E-4DC9-9552-8B1586EBE5E9}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{09EE93BC-CC82-46C7-8FFE-3AC36F4C9D00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09EE93BC-CC82-46C7-8FFE-3AC36F4C9D00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09EE93BC-CC82-46C7-8FFE-3AC36F4C9D00}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{09EE93BC-CC82-46C7-8FFE-3AC36F4C9D00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09EE93BC-CC82-46C7-8FFE-3AC36F4C9D00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09EE93BC-CC82-46C7-8FFE-3AC36F4C9D00}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6C4C9536-1EB2-4ED0-B780-FB2D5F26D631}
+	EndGlobalSection
+EndGlobal
