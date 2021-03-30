@@ -1,29 +1,25 @@
-﻿using nanoFramework.CoAPSharp.Channels;
-using nanoFramework.CoAPSharp.Helpers;
-using nanoFramework.CoAPSharp.Message;
+﻿using nanoFramework.CoAP.Channels;
+using nanoFramework.CoAP.Helpers;
+using nanoFramework.CoAP.Message;
 using nanoFramework.Networking;
 using System;
 using System.Diagnostics;
 using System.Threading;
 
-namespace CoAPSharpSamples
+namespace nanoFramework.CoAP.Samples
 {
     public class BasicCoAPServerWellKnown
     {      
         /// <summary>
         /// Holds the server channel instance
         /// </summary>
-        private static CoAPServerChannel _server = null;
+        private static CoAPServerChannel coapServer = null;
 
         public static void Main()
         {
             NetworkHelpers.SetupAndConnectNetwork(false);
             Debug.WriteLine("Waiting for network up and IP address...");
             NetworkHelpers.IpAddressAvailable.WaitOne();
-
-
-            //Debug.WriteLine("Waiting for valid Date & Time...");
-            //NetworkHelpers.DateTimeAvailable.WaitOne();
 
             StartServer();
 
@@ -38,11 +34,11 @@ namespace CoAPSharpSamples
         /// </summary>
         private static void StartServer()
         {
-            _server = new CoAPServerChannel();
-            _server.Initialize(null, 5683);
-            _server.CoAPResponseReceived += new CoAPResponseReceivedHandler(OnCoAPResponseReceived);
-            _server.CoAPRequestReceived += new CoAPRequestReceivedHandler(OnCoAPRequestReceived);
-            _server.CoAPError += new CoAPErrorHandler(OnCoAPError);
+            coapServer = new CoAPServerChannel();
+            coapServer.Initialize(null, 5683);
+            coapServer.CoAPResponseReceived += new CoAPResponseReceivedHandler(OnCoAPResponseReceived);
+            coapServer.CoAPRequestReceived += new CoAPRequestReceivedHandler(OnCoAPRequestReceived);
+            coapServer.CoAPError += new CoAPErrorHandler(OnCoAPError);
         }
 
         /// <summary>
@@ -76,7 +72,7 @@ namespace CoAPSharpSamples
                                                         coapReq /*Copy all necessary values from request in the response*/);
                     //When you use the constructor that accepts a request, then automatically
                     //the message id , token and remote sender values are copied over to the response
-                    _server.Send(resp);
+                    coapServer.Send(resp);
                 }
                 else
                 {
@@ -86,7 +82,7 @@ namespace CoAPSharpSamples
                                                         coapReq /*Copy all necessary values from request in the response*/);
                     //When you use the constructor that accepts a request, then automatically
                     //the message id , token and remote sender values are copied over to the response
-                    _server.Send(resp);
+                    coapServer.Send(resp);
                 }
             }
             else
@@ -99,7 +95,7 @@ namespace CoAPSharpSamples
                         CoAPResponse resp = new CoAPResponse(CoAPMessageType.ACK,
                                                             CoAPMessageCode.NOT_FOUND,
                                                             coapReq /*Copy all necessary values from request in the response*/);
-                        _server.Send(resp);
+                        coapServer.Send(resp);
                     }
                     else
                     {
@@ -107,7 +103,7 @@ namespace CoAPSharpSamples
                         CoAPResponse resp = new CoAPResponse(CoAPMessageType.RST,
                                                             CoAPMessageCode.NOT_FOUND,
                                                             coapReq /*Copy all necessary values from request in the response*/);
-                        _server.Send(resp);
+                        coapServer.Send(resp);
                     }
                 }
                 else
@@ -122,7 +118,7 @@ namespace CoAPSharpSamples
                         resp.AddPayload(GetSupportedResourceDescriptions());
                         //Tell recipient about the content-type of the response
                         resp.AddOption(CoAPHeaderOption.CONTENT_FORMAT, AbstractByteUtils.GetBytes(CoAPContentFormatOption.APPLICATION_LINK_FORMAT));
-                        _server.Send(resp);
+                        coapServer.Send(resp);
                     }
                     else
                     {
@@ -137,7 +133,7 @@ namespace CoAPSharpSamples
                         //Tell recipient about the content-type of the response
                         resp.AddOption(CoAPHeaderOption.CONTENT_FORMAT, AbstractByteUtils.GetBytes(CoAPContentFormatOption.APPLICATION_LINK_FORMAT));
                         //send it
-                        _server.Send(resp);
+                        coapServer.Send(resp);
                     }
                 }
             }

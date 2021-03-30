@@ -12,17 +12,22 @@
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <FileAlignment>512</FileAlignment>
-    <RootNamespace>CoAPSharpSamples</RootNamespace>
-    <AssemblyName>CoAPSharpSamples</AssemblyName>
+    <RootNamespace>nanoFramework.CoAP.Samples</RootNamespace>
+    <AssemblyName>nanoFramework.CoAP.Samples</AssemblyName>
     <TargetFrameworkVersion>v1.0</TargetFrameworkVersion>
-    <StartupObject>CoAPSharpSamples.BasicCoAPServerWellKnown</StartupObject>
+    <StartupObject>nanoFramework.CoAP.Samples.BasicCoAPServerWellKnown</StartupObject>
   </PropertyGroup>
   <Import Project="$(NanoFrameworkProjectSystemPath)NFProjectSystem.props" Condition="Exists('$(NanoFrameworkProjectSystemPath)NFProjectSystem.props')" />
   <ItemGroup>
     <Compile Include="BasicCoAPCONClient.cs" />
     <Compile Include="BasicCoAPCONServer.cs" />
+    <Compile Include="BasicCoAPNONClient.cs" />
     <Compile Include="BasicCoAPServerWellKnown.cs" />
+    <Compile Include="BlockTransferPUTClient.cs" />
+    <Compile Include="BlockTransferPUTServer.cs" />
     <Compile Include="NetworkHelpers.cs" />
+    <Compile Include="ObservableServer.cs" />
+    <Compile Include="ObserverClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -46,6 +51,11 @@
       <Private>True</Private>
       <SpecificVersion>True</SpecificVersion>
     </Reference>
+    <Reference Include="System.Math, Version=1.3.1.0, Culture=neutral, PublicKeyToken=c07d481e9758c731">
+      <HintPath>..\packages\nanoFramework.System.Math.1.3.1-preview.2\lib\System.Math.dll</HintPath>
+      <Private>True</Private>
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
     <Reference Include="System.Net, Version=1.6.5.0, Culture=neutral, PublicKeyToken=c07d481e9758c731">
       <HintPath>..\packages\nanoFramework.System.Net.1.6.5-preview.2\lib\System.Net.dll</HintPath>
       <Private>True</Private>
@@ -57,7 +67,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CoAPSharp\nanoFramework.CoAP.nfproj" />
+    <ProjectReference Include="..\nanoFramework.CoAP\nanoFramework.CoAP.nfproj" />
   </ItemGroup>
   <Import Project="$(NanoFrameworkProjectSystemPath)NFProjectSystem.CSharp.targets" Condition="Exists('$(NanoFrameworkProjectSystemPath)NFProjectSystem.CSharp.targets')" />
   <ProjectExtensions>

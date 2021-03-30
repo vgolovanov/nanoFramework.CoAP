@@ -1,21 +1,21 @@
-﻿using nanoFramework.CoAPSharp.Channels;
-using nanoFramework.CoAPSharp.Exceptions;
-using nanoFramework.CoAPSharp.Helpers;
-using nanoFramework.CoAPSharp.Message;
+﻿using nanoFramework.CoAP.Channels;
+using nanoFramework.CoAP.Exceptions;
+using nanoFramework.CoAP.Helpers;
+using nanoFramework.CoAP.Message;
 using nanoFramework.Networking;
 using System;
 using System.Collections;
 using System.Diagnostics;
 using System.Threading;
 
-namespace CoAPSharpSamples
+namespace nanoFramework.CoAP.Samples
 {
     public class BasicCoAPCONClient
     {      
         /// <summary>
         /// Holds an instance of the CoAP client
         /// </summary>
-        private static CoAPClientChannel _client = null;
+        private static CoAPClientChannel coapClient = null;
         /// <summary>
         /// Entry point
         /// </summary>     
@@ -38,11 +38,11 @@ namespace CoAPSharpSamples
         /// </summary>
         private static void SetupClient()
         {
-            _client = new CoAPClientChannel();
-            _client.Initialize("localhost", 5683);
-            _client.CoAPError += new CoAPErrorHandler(OnCoAPError);
-            _client.CoAPRequestReceived += new CoAPRequestReceivedHandler(OnCoAPRequestReceived);
-            _client.CoAPResponseReceived += new CoAPResponseReceivedHandler(OnCoAPResponseReceived);
+            coapClient = new CoAPClientChannel();
+            coapClient.Initialize("localhost", 5683);
+            coapClient.CoAPError += new CoAPErrorHandler(OnCoAPError);
+            coapClient.CoAPRequestReceived += new CoAPRequestReceivedHandler(OnCoAPRequestReceived);
+            coapClient.CoAPResponseReceived += new CoAPResponseReceivedHandler(OnCoAPResponseReceived);
         }
         /// <summary>
         /// Send the request to get the temperature
@@ -50,7 +50,7 @@ namespace CoAPSharpSamples
         private static void SendRequest()
         {
             string urlToCall = "coap://localhost:5683/sensors/temp";
-            UInt16 mId = _client.GetNextMessageID();//Using this method to get the next message id takes care of pending CON requests
+            UInt16 mId = coapClient.GetNextMessageID();//Using this method to get the next message id takes care of pending CON requests
             CoAPRequest tempReq = new CoAPRequest(CoAPMessageType.CON, CoAPMessageCode.GET, mId);
             tempReq.SetURL(urlToCall);
 
@@ -59,7 +59,7 @@ namespace CoAPSharpSamples
             //tempReq.Timeout = 10;
             //tempReq.RetransmissionCount = 5;
 
-            _client.Send(tempReq);
+            coapClient.Send(tempReq);
         }
         /// <summary>
         /// We should receive the temperature from sever in the response

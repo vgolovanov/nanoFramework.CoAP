@@ -7,6 +7,11 @@ Project("{11A8DD76-328B-46DF-9F39-F559912D0360}") = "nanoFramework.CoAP", "nanoF
 EndProject
 Project("{11A8DD76-328B-46DF-9F39-F559912D0360}") = "nanoFramework.CoAP_Samples", "nanoFramework.CoAP_Samples\nanoFramework.CoAP_Samples.nfproj", "{09EE93BC-CC82-46C7-8FFE-3AC36F4C9D00}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9A208837-545A-4FFA-B9F1-255106EF55D4}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
