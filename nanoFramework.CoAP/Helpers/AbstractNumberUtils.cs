@@ -20,7 +20,7 @@
 using System;
 using System.Collections;
 
-namespace nanoFramework.CoAPSharp.Helpers
+namespace nanoFramework.CoAP.Helpers
 {
     /// <summary>
     /// A utilities class for numbers

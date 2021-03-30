@@ -19,10 +19,10 @@
  *****************************************************************************/
 using System;
 using System.Text;
-using nanoFramework.CoAPSharp.Helpers;
+using nanoFramework.CoAP.Helpers;
 using System.Net;
 
-namespace nanoFramework.CoAPSharp.Message
+namespace nanoFramework.CoAP.Message
 {
     /// <summary>
     /// Represents a request message during CoAP exchange

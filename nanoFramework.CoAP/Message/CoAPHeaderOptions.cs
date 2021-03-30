@@ -20,11 +20,11 @@
 using System;
 using System.Collections;
 using System.Text;
-using nanoFramework.CoAPSharp.Message;
-using nanoFramework.CoAPSharp.Exceptions;
-using nanoFramework.CoAPSharp.Helpers;
+using nanoFramework.CoAP.Message;
+using nanoFramework.CoAP.Exceptions;
+using nanoFramework.CoAP.Helpers;
 
-namespace nanoFramework.CoAPSharp.Message
+namespace nanoFramework.CoAP.Message
 {
     /// <summary>
     /// Container to hold a list of CoAP Options

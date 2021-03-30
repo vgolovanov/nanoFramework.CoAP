@@ -22,7 +22,7 @@ using System.Text;
 
 using System.Collections;
 
-namespace nanoFramework.CoAPSharp.Helpers
+namespace nanoFramework.CoAP.Helpers
 {
     /// <summary>
     /// A result object of type JSON. This can be used to exchange JSON specific payload

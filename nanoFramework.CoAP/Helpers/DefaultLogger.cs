@@ -19,7 +19,7 @@
  *****************************************************************************/
 using System;
 
-namespace nanoFramework.CoAPSharp.Helpers
+namespace nanoFramework.CoAP.Helpers
 {
     /// <summary>
     /// CoAPSharp requires a logger class to work. If you forget to implement a logger, this

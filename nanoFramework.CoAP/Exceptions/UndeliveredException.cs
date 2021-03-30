@@ -19,7 +19,7 @@
  *****************************************************************************/
 using System;
 
-namespace nanoFramework.CoAPSharp.Exceptions
+namespace nanoFramework.CoAP.Exceptions
 {
     /// <summary>
     /// Exception class that indicates an exception when message goes undelivered.

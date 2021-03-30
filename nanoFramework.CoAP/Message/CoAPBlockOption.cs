@@ -20,9 +20,9 @@
 using System;
 using System.Text;
 
-using nanoFramework.CoAPSharp.Helpers;
+using nanoFramework.CoAP.Helpers;
 
-namespace nanoFramework.CoAPSharp.Message
+namespace nanoFramework.CoAP.Message
 {
     /// <summary>
     /// CoAP protocol extension supports Block transfers.

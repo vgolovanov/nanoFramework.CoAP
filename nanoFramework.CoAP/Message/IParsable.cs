@@ -20,7 +20,7 @@
 using System;
 using System.Text;
 
-namespace nanoFramework.CoAPSharp.Message
+namespace nanoFramework.CoAP.Message
 {
     /// <summary>
     /// An object within this library, that is formed by parsing the CoAP message stream should

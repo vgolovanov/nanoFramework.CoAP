@@ -19,11 +19,11 @@
  *****************************************************************************/
 using System;
 using System.Text;
-using nanoFramework.CoAPSharp.Message;
-using nanoFramework.CoAPSharp.Helpers;
-using nanoFramework.CoAPSharp.Exceptions;
+using nanoFramework.CoAP.Message;
+using nanoFramework.CoAP.Helpers;
+using nanoFramework.CoAP.Exceptions;
 
-namespace nanoFramework.CoAPSharp.Message
+namespace nanoFramework.CoAP.Message
 {
     /// <summary>
     /// This class represents the actual payload that is associated with a CoAP message.

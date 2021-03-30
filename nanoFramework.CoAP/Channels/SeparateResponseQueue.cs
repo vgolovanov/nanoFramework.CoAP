@@ -21,9 +21,9 @@ using System;
 
 using System.Collections;
 using System.Threading;
-using nanoFramework.CoAPSharp.Message;
+using nanoFramework.CoAP.Message;
 
-namespace nanoFramework.CoAPSharp.Channels
+namespace nanoFramework.CoAP.Channels
 {
     /// <summary>
     /// In CoAP, there is a concept of separate response. If the server wants sometime to process

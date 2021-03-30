@@ -22,10 +22,10 @@ using System.Net;
 using System.Net.Sockets;
 using System.Collections;
 
-using nanoFramework.CoAPSharp.Message;
-using nanoFramework.CoAPSharp.Helpers;
+using nanoFramework.CoAP.Message;
+using nanoFramework.CoAP.Helpers;
 
-namespace nanoFramework.CoAPSharp.Channels
+namespace nanoFramework.CoAP.Channels
 {
     #region delegates
     /// <summary>

@@ -22,11 +22,11 @@ using System.Net;
 using System.Net.Sockets;
 using System.Threading;
 
-using nanoFramework.CoAPSharp.Exceptions;
-using nanoFramework.CoAPSharp.Message;
-using nanoFramework.CoAPSharp.Helpers;
+using nanoFramework.CoAP.Exceptions;
+using nanoFramework.CoAP.Message;
+using nanoFramework.CoAP.Helpers;
 
-namespace nanoFramework.CoAPSharp.Channels
+namespace nanoFramework.CoAP.Channels
 {
     /// <summary>
     /// This class represents a CoAP channel that behaves like a client.

@@ -19,7 +19,7 @@
  *****************************************************************************/
 using System;
 
-namespace nanoFramework.CoAPSharp.Exceptions
+namespace nanoFramework.CoAP.Exceptions
 {
     /// <summary>
     /// Exception class that indicates that the specific operation/situation is not supported.

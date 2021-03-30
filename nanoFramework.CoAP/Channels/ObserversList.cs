@@ -21,10 +21,10 @@ using System;
 
 using System.Collections;
 using System.Threading;
-using nanoFramework.CoAPSharp.Message;
-using nanoFramework.CoAPSharp.Helpers;
+using nanoFramework.CoAP.Message;
+using nanoFramework.CoAP.Helpers;
 
-namespace nanoFramework.CoAPSharp.Channels
+namespace nanoFramework.CoAP.Channels
 {
     /// <summary>
     /// In CoAP, there is a concept of "Observers". This simply means, that clients

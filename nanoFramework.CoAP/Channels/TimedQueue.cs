@@ -20,11 +20,11 @@
 using System;
 
 using System.Collections;
-using nanoFramework.CoAPSharp.Message;
+using nanoFramework.CoAP.Message;
 using System.Threading;
-using nanoFramework.CoAPSharp.Helpers;
+using nanoFramework.CoAP.Helpers;
 
-namespace nanoFramework.CoAPSharp.Channels
+namespace nanoFramework.CoAP.Channels
 {
     /// <summary>
     /// In CoAP, confirmable messages must wait for an ACK or RST. As long as we do not

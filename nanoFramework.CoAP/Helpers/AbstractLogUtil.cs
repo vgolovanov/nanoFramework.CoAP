@@ -20,7 +20,7 @@
 using System;
 using System.Runtime.CompilerServices;
 
-namespace nanoFramework.CoAPSharp.Helpers
+namespace nanoFramework.CoAP.Helpers
 {
     /// <summary>
     /// Various log levels supported (just like log4net) but a bit restricted

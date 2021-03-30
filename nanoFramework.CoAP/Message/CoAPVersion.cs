@@ -19,10 +19,10 @@
  *****************************************************************************/
 using System;
 using System.Text;
-using nanoFramework.CoAPSharp.Message;
-using nanoFramework.CoAPSharp.Exceptions;
+using nanoFramework.CoAP.Message;
+using nanoFramework.CoAP.Exceptions;
 
-namespace nanoFramework.CoAPSharp.Message
+namespace nanoFramework.CoAP.Message
 {
     /// <summary>
     /// This class represents the CoAP version being used. As of now, only V 1.0 is supported

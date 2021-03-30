@@ -20,7 +20,7 @@
 using System;
 using System.Net;
 
-namespace nanoFramework.CoAPSharp.Helpers
+namespace nanoFramework.CoAP.Helpers
 {
     /// <summary>
     /// A class to provide utility methods to work with the network

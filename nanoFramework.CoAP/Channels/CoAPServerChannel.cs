@@ -18,16 +18,16 @@
     Or visit http://www.gnu.org/licenses/
  *****************************************************************************/
 using System;
-using nanoFramework.CoAPSharp.Helpers;
+using nanoFramework.CoAP.Helpers;
 using System.Net.Sockets;
 using System.Net;
 using System.Threading;
-using nanoFramework.CoAPSharp.Message;
+using nanoFramework.CoAP.Message;
 using System.Collections;
 
-using nanoFramework.CoAPSharp.Exceptions;
+using nanoFramework.CoAP.Exceptions;
 
-namespace nanoFramework.CoAPSharp.Channels
+namespace nanoFramework.CoAP.Channels
 {
     /// <summary>
     /// This class implements a server node type. Any constrained device, that is

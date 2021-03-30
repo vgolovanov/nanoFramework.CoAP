@@ -19,9 +19,9 @@
  *****************************************************************************/
 using System;
 using System.Text;
-using nanoFramework.CoAPSharp.Helpers;
+using nanoFramework.CoAP.Helpers;
 
-namespace nanoFramework.CoAPSharp.Message
+namespace nanoFramework.CoAP.Message
 {
     /// <summary>
     /// Represents a standard response object in CoAP exchange

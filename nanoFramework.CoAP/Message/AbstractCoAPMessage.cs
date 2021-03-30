@@ -19,12 +19,12 @@
  *****************************************************************************/
 using System;
 using System.Text;
-using nanoFramework.CoAPSharp.Helpers;
-using nanoFramework.CoAPSharp.Exceptions;
+using nanoFramework.CoAP.Helpers;
+using nanoFramework.CoAP.Exceptions;
 using System.Net;
 using System.Collections;
 
-namespace nanoFramework.CoAPSharp.Message
+namespace nanoFramework.CoAP.Message
 {
     /// <summary>
     /// This abstract class simply represents a CoAP message. A CoAP message in itself has no meaning, unless

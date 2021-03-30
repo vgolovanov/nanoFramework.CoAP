@@ -20,7 +20,7 @@
 using System;
 using System.Text;
 
-namespace nanoFramework.CoAPSharp.Helpers
+namespace nanoFramework.CoAP.Helpers
 {
     /// <summary>
     /// A utilities class to work with bytes

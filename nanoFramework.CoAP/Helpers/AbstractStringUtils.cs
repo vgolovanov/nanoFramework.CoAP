@@ -20,7 +20,7 @@
 using System;
 
 
-namespace nanoFramework.CoAPSharp.Helpers
+namespace nanoFramework.CoAP.Helpers
 {
     /// <summary>
     /// A utility class for string object
