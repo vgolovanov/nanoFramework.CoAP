@@ -17,8 +17,7 @@ namespace nanoFramework.Networking
         private static string c_SSID = "REPLACE-WITH-YOUR-SSID";
         private static string c_AP_PASSWORD = "REPLACE-WITH-YOUR-WIFI-KEY";
 
-        static public ManualResetEvent IpAddressAvailable = new ManualResetEvent(false);
-      
+        static public ManualResetEvent IpAddressAvailable = new ManualResetEvent(false);      
         private static WiFiAdapter wifi;
 
         public static void SetupAndConnectNetwork()
@@ -35,6 +34,11 @@ namespace nanoFramework.Networking
                 ni.EnableDhcp();
 
                 CheckIP();
+
+                if(!NetworkHelpers.IpAddressAvailable.WaitOne(5000, false))
+                {
+                    throw new NotSupportedException("ERROR: IP address is not assigned to the network interface.");
+                }
             }
             else
             {

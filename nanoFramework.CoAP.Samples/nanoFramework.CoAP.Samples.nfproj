@@ -15,7 +15,7 @@
     <RootNamespace>nanoFramework.CoAP.Samples</RootNamespace>
     <AssemblyName>nanoFramework.CoAP.Samples</AssemblyName>
     <TargetFrameworkVersion>v1.0</TargetFrameworkVersion>
-    <StartupObject>nanoFramework.CoAP.Samples.BasicCoAPServerWellKnown</StartupObject>
+    <StartupObject>nanoFramework.CoAP.Samples.BasicCoAPCONServer</StartupObject>
   </PropertyGroup>
   <Import Project="$(NanoFrameworkProjectSystemPath)NFProjectSystem.props" Condition="Exists('$(NanoFrameworkProjectSystemPath)NFProjectSystem.props')" />
   <ItemGroup>
