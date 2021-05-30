@@ -10,13 +10,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "CoAPDotNet", "..\CoAPDotNet\CoAPDotNet\CoAPDotNet.shproj", "{7B4E6FF2-742D-460E-BF0D-A5D41E610BBF}"
-EndProject
 Project("{11A8DD76-328B-46DF-9F39-F559912D0360}") = "nanoFramework.CoAP.Samples", "nanoFramework.CoAP.Samples\nanoFramework.CoAP.Samples.nfproj", "{09EE93BC-CC82-46C7-8FFE-3AC36F4C9D00}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "CoAPDotNet", "CoAPDotNet\CoAPDotNet\CoAPDotNet.shproj", "{7B4E6FF2-742D-460E-BF0D-A5D41E610BBF}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		..\CoAPDotNet\CoAPDotNet\CoAPDotNet.projitems*{7b4e6ff2-742d-460e-bf0d-a5d41e610bbf}*SharedItemsImports = 13
+		CoAPDotNet\CoAPDotNet\CoAPDotNet.projitems*{7b4e6ff2-742d-460e-bf0d-a5d41e610bbf}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

@@ -59,7 +59,7 @@
       <SpecificVersion>True</SpecificVersion>
     </Reference>
   </ItemGroup>
-  <Import Project="..\..\CoAPDotNet\CoAPDotNet\CoAPDotNet.projitems" Label="Shared" />
+  <Import Project="..\CoAPDotNet\CoAPDotNet\CoAPDotNet.projitems" Label="Shared" />
   <Import Project="$(NanoFrameworkProjectSystemPath)NFProjectSystem.CSharp.targets" Condition="Exists('$(NanoFrameworkProjectSystemPath)NFProjectSystem.CSharp.targets')" />
   <ProjectExtensions>
     <ProjectCapabilities>
