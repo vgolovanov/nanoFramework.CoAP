@@ -1,0 +1,3 @@
+[submodule "CoAPDotNet"]
+	path = CoAPDotNet
+	url = https://github.com/vgolovanov/CoAPDotNet
