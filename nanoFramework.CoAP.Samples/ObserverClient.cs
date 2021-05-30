@@ -33,7 +33,7 @@ namespace nanoFramework.CoAP.Samples
         /// </summary>
         public static void Main()
         {
-            NetworkHelpers.SetupAndConnectNetwork(false);
+            NetworkHelpers.SetupAndConnectNetwork();
             Debug.WriteLine("Waiting for network up and IP address...");
             NetworkHelpers.IpAddressAvailable.WaitOne();
 
@@ -100,8 +100,8 @@ namespace nanoFramework.CoAP.Samples
                 //Extract the temperature..but first, check if the notification is fresh
                 //The server sends a 4-digit sequence number
                 int newObsSeq = AbstractByteUtils.ToUInt16(coapReq.Options.GetOption(CoAPHeaderOption.OBSERVE).Value);
-                if ((lastObsSeq < newObsSeq && ((newObsSeq - lastObsSeq) < (System.Math.Pow(2, 23)))) ||
-                    (lastObsSeq > newObsSeq && ((lastObsSeq - newObsSeq) > (System.Math.Pow(2, 23)))) ||
+                if ((lastObsSeq < newObsSeq && ((newObsSeq - lastObsSeq) < (System.Math.Pow(2.0, 23.0)))) ||
+                    (lastObsSeq > newObsSeq && ((lastObsSeq - newObsSeq) > (System.Math.Pow(2.0, 23.0)))) ||
                     DateTime.Today > lastObsRx.AddSeconds(128))
                 {
                     //The value received from server is new....read the new temperature

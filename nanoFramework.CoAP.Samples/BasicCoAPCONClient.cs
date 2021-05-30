@@ -21,7 +21,7 @@ namespace nanoFramework.CoAP.Samples
         /// </summary>     
         public static void Main()
         {                          
-            NetworkHelpers.SetupAndConnectNetwork(false);
+            NetworkHelpers.SetupAndConnectNetwork();
             Debug.WriteLine("Waiting for network up and IP address...");
             NetworkHelpers.IpAddressAvailable.WaitOne();
 
